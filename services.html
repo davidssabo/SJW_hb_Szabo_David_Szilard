@@ -9,6 +9,80 @@
 	<title>Hőlégballon</title>
 </head>
 <body>
+	<header class="container-fluid">
+		<h1>Hőlégballon<br>Szolgáltatások</h1>
+	</header>
+	<nav class="navbar navbar-dark navbar-expand-lg">
+		<div class="container-fluid">
+			<a href="./index.html" class="navbar-brand">Hőlégballon</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbar"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#felepites">Felépítés</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#tortenet">Történet</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./services.html"
+							>Árak, Szolgáltatások</a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<table class="table table-striped">
+					<tr>
+						<th>Megnevezés</th>
+						<th>Ár</th>
+					</tr>
+					<tr>
+						<td rowspan="2">Hőlégballonos sétarepülő jegy</td>
+						<td>Felnőtt</td>
+						<td>40.000 Ft/fő</td>
+					</tr>
+					<tr>
+						<td>Gyerek (10-14 év)</td>
+						<td>28.000 Ft/fő</td>
+					</tr>
+					<tr>
+						<td>Privát/romantikus repülés</td>
+						<td></td>
+						<td>70.000 Ft/2 fő</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 offset-3">
+				<h2>Hőlégballonos<br>sétarepülő árkalkulátor</h2>
+				<form>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Gyermekek száma" id="gyerek">
+						<span class="input-group-text">fő</span>
+					</div>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Felnőttek száma" id="felnott">
+						<span class="input-group-text">fő</span>
+					</div>
+					<button id="szamol" class="btn btn-primary" onclick="kiszamol()">Számoljunk együtt</button>
+				</form>
+				<div id="result"></div>
+			</div>
+		</div>
+	</div>
 	<script src="./js/bootstrap.bundle.min.js"></script>
 	<script src="./js/app.js"></script>
 </body>
